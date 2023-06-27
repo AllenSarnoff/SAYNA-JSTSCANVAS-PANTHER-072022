@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "Panthera";
+    src: url("fonts/panthera.ttf");
+}
+
+@font-face {
+    font-family: "Beyno" ;
+    src: url("fonts/BEYNO.ttf");
+}
+
+@font-face {
+    font-family: "Wakanda forever";
+    src: url("fonts/WakandaForever-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cantarell";
+    src: url("fonts/Cantarell-Regular.ttf");
+}
+
+header{
+    font-family: "Beyno";
+    margin-left: 7%;
+    margin-top: 2%;
+    display: inline-block;
+}
+
+header a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 45px;
+    
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#navigation{
+    position: absolute;
+    top: 6%;
+    right: 7%;
+}
+
+.logo{
+    display: block;
+    margin-bottom: 77%;
+}
+
+.social_network{
+    position:fixed;
+    display: block;
+    top: 43%;
+    left: 3%;
+    padding-left: 1%;
+    border-left: 4px solid #9E91B7;
+}
+
+body{
+    background-image: url("Illustrations + Logo/All pages/arrière_plan.png");
+    color: whitesmoke;
+    font-family: "Cantarell";
+    width: 100%;
+}
+
+body{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    animation: fade-in 2s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+
+.Okoye{
+    width: 50%;
+    display: block;
+    float: left;
+    margin-top: 0%;
+}
+
+.view{
+    display: inline-block;
+}
+
+.intro{
+    width: 47%;
+    /* display: block; */
+    float: right;
+    margin-right: 3%;
+    padding-top: 8%;
+}
+
+h1{
+    font-family: "Beyno";
+    font-weight: 300;
+    font-size: 56px;
+    color: #9E91B7;
+    top: 4%; 
+}
+
+.intro p{
+    padding: 20% 30% 0% 0%;
+    padding: auto;
+    font-size: 91%;
+    width: 90%;
+    /* margin: auto; */
+    text-align: justify;
+    background-image: url("Illustrations + Logo/Enigme/Pantherenigme2.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.intro p img{
+    margin-left: 45%;
+}
+
+.enigme{
+    width: 53%;
+    margin-bottom: 6%;
+    font-size: 88%;
+    font-family: "Cantarell";
+}
+
+.enigme span, .information span{
+    font-family: "Wakanda forever";
+    font-size: x-large;
+    width: 80%;
+    letter-spacing:10px;
+}
+
+h3{
+    font-family: "Beyno";
+    color: #9E91B7;
+    text-decoration: underline;
+    letter-spacing: normal;
+}
+
+article{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+aside .enigme{
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.enigme span{
+    font-size: large;
+}
+
+.information{
+    display: block;
+    width: 45%;
+    float: right;
+    text-align: center;
+    font-size: 64%;
+    padding: 20% 5% 10% 0%;
+    background-image: url("Illustrations + Logo/Enigme/Pantherenigme2.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-right: 0%;
+}
+
+.answer{
+    margin-top: 10%;
+}
+
+.answer p{
+    font-size: large;
+}
+
+#ans{
+    display: block;
+    margin-top: 1%;
+    width: 85%;
+    font-size: large;
+    color: whitesmoke;
+    padding: 1%;
+    padding-left: 3%;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.submit{
+    display: block;
+    margin-top: 6%;
+    margin-left: 12%;
+    margin-bottom: 10%;
+    font-family: "Cantarell";
+    color: black;
+    background-color: #F2CEF2;
+    padding: 2% 5% 2% 5%;
+    border-radius: 20px;
+}
+
+footer{
+    background-image: url("Illustrations + Logo/All pages/back_footer.png");
+    width: 100%;
+    padding: 6%;
+    padding-left: 10%;
+    display: inline-block;
+}
+
+.link{
+    position: absolute;
+    left: 17%;
+    top: 255%;
+}
+
+.images{
+    float: left;
+    margin-right: 10%;
+}
+
+.about{
+    display: inline-block;
+    /* right: 20%; */
+}
+
+.pages{
+    display: block;
+    margin-bottom: 15%;
+}
+
+.pages:hover{
+    text-decoration: underline;
+}
+
+.about p{
+    float: left;
+    font-size: larger;
+}
+
+.contacts{
+    float: right;
+    margin-left: 2%;
+}
+
+.contacts img:hover, .link:hover, .circles:hover{
+    transform: scale(1.1);
+}
+
+.terms{
+    margin-top: 5%
+}

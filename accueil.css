@@ -1,0 +1,337 @@
+@font-face {
+    font-family: "Panthera";
+    src: url("fonts/panthera.ttf");
+}
+
+@font-face {
+    font-family: "Beyno" ;
+    src: url("fonts/BEYNO.ttf");
+}
+
+@font-face {
+    font-family: "Wakanda forever";
+    src: url("fonts/WakandaForever-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cantarell";
+    src: url("fonts/Cantarell-Regular.ttf");
+}
+
+header{
+    font-family: "Beyno";
+    margin-left: 8%;
+    margin-top: 2%;
+    display: inline-block;
+}
+
+header a{
+    color: whitesmoke;
+    text-decoration: none;
+    /* display: inline-block; */
+    margin-right: 45px;
+    
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.character {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    margin-top: 1%;
+    background-color: #021740;
+  }
+  
+  .infos {
+    display: flex;
+    align-items: center;
+    font-size: 70%;
+  }
+
+  .title{
+    font-family: "Beyno";
+    font-size: large;
+    color: #9E91B7;
+  }
+
+  /* .infos p{
+    width: 40%;
+  } */
+  
+  .infos img {
+    width: 50%;
+    height: 100%;
+    margin-right: 5%; /* Espacement entre l'image et le paragraphe */
+  }
+
+.infos img:hover{
+    transform: scale(1.2);
+}
+
+button{
+    color: whitesmoke;
+    font-size: large;
+    background-color: #021740;
+    border-radius: 20px;
+}
+
+.seeMore{
+    display: block;
+    margin-top:3%;
+    text-decoration: underline;
+}
+
+/* .logo:hover{
+    color: blueviolet;
+} */
+
+#navigation{
+    position: absolute;
+    top: 6%;
+    right: 10%;
+}
+
+.logo{
+    display: block;
+    margin-bottom: 77%;
+}
+
+.social_network{
+    position:fixed;
+    display: block;
+    top: 43%;
+    left: 3%;
+    padding-left: 1%;
+    border-left: 4px solid #9E91B7;
+}
+
+#navigation a:hover{
+    border-bottom: 2px solid whitesmoke;
+}
+
+
+body{
+    background-image: url("Illustrations + Logo/All pages/arrière_plan.png");
+    color: whitesmoke;
+    font-family: "Cantarell";
+    width: 100%;
+}
+
+body{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  animation: fade-in 2s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+h1{
+    font-family: "Panthera";
+    color: #9E91B7;
+    font-size: 440%;
+}
+
+h2, h3{
+    font-family: "Beyno";
+    color: #9E91B7;
+}
+
+.introduction_text{
+    width: 30%;
+    float: left;
+    margin-top: 8%;
+    margin-left: 12%;
+    font-size: 70%;
+    text-align: justify;
+}
+
+.introduction_text h2{
+    font-size: 220%;
+    margin-top: 0%;
+}
+
+.T’Challa_Black_Panther{
+    width: 56%;
+    float: right;
+}
+
+/* .character{
+    display: inline;
+} */
+
+.main{
+    width: 46%;
+    float: left;
+    margin-left: 10%;
+    font-size: 68%;
+    text-align: justify;
+    margin-top: 10%;
+}
+
+aside{
+    width: 18%;
+    float: right;
+    margin-top: 7%;
+    margin-right: 10%;
+    margin-bottom: 4%;
+    font-size: 70%;
+    background-color: #ffffff;
+    background-position: 50%;
+    border-radius: 10px;
+    color: black;
+    padding: 40px; 
+    padding-right: 80px;
+}
+
+aside img{
+    width: 120%;
+    height: 100%;
+    margin: auto;
+}
+
+h4{
+    margin-top: 3%;
+    margin-bottom: 9%;
+    font-size: large;
+}
+
+.names{
+    text-align: center;
+    width: 120%;
+    margin: auto;
+}
+
+aside span{
+    background-color: blueviolet;
+    padding: 4%;
+    margin-right: 5%;
+    margin-bottom: 9%;
+    font-size: 90%;
+    border-radius: 10%;
+    color: #ffffff;
+}
+
+
+.description{
+    margin-top: 15%
+}
+
+.black_panther{
+    width: 25%;
+    height: 25%;
+    float: right;
+    margin-right: 9%;
+    margin-bottom: 20%;
+}
+
+form{
+    margin-left: 40%;
+    margin-top: 0%;
+    padding: auto;
+}
+
+input{
+    display: block;
+    margin-bottom: 4%;
+}
+
+textarea{
+    margin-bottom: 4%;
+    align-items: center;
+}
+
+input, textarea{
+    background-color: transparent;
+    border-radius: 20px;
+    width: 35%;
+    text-align: center;
+    color: #ffffff;
+    padding: 1%;
+    padding-left: 3%;
+    font-size: large;
+}
+
+.submit{
+    width: 15%;
+    margin-left: 12%;
+    font-family: "Cantarell";
+    color: black;
+    background-color: #F2CEF2;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+/* .mountains{
+    width: 100%;
+} */
+.contacts{
+    position: relative;
+    top: 80%;
+}
+
+footer{
+    background-image: url("Illustrations + Logo/All pages/back_footer.png");
+    width: 100%;
+    padding: 6%;
+    padding-left: 10%;
+    display: inline-block;
+}
+
+.link{
+    position: absolute;
+    left: 17%;
+    top: 680%;
+}
+
+.images{
+    float: left;
+    margin-right: 10%;
+}
+
+.about{
+    display: inline-block;
+    /* right: 20%; */
+}
+
+.pages{
+    display: block;
+    margin-bottom: 15%;
+}
+
+.pages:hover{
+    text-decoration: underline;
+}
+
+.about p{
+    float: left;
+    font-size: larger;
+}
+
+.contact{
+    float: right;
+    margin-left: 2%;
+}
+
+.contact img:hover, .link:hover, .circles:hover{
+    transform: scale(1.1);
+}
+
+.terms{
+    margin-top: 5%
+}

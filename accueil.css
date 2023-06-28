@@ -38,41 +38,65 @@ a{
     text-decoration: none;
 }
 
-.character {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    height: 70%;
-    margin-left: 10%;
-    margin-top: 1%;
-    background-color: #021740;
-  }
-  
-  .infos {
-    display: flex;
-    align-items: center;
-    font-size: 70%;
-  }
+.carrousel{
+    width: 800px;
+    margin: auto;
+    height: 343px;
+    position: relative;
+    overflow: hidden;
+    background-color: #07338C;
+}
+
+.container{
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.div{
+    width: 10%;
+    height: 343px;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #07338C; 
+}
+
+.par{
+    padding: 20% 3% 20% 40%;
+    padding-left: 80%;
+    align-content: center;
+    display: block;
+    float: right;
+    text-align: justify;
+    font-size: small;
+    color: whitesmoke;
+}
+
+#g, #d{
+    position: absolute;
+    top: 45%;
+}
+
+#g:hover, #d:hover{
+    transform: scale(1.2);
+}
+
+#g{
+    left: 0%;
+}
+
+#d{
+    right: 0%;
+}
 
   .title{
     font-family: "Beyno";
     font-size: large;
     color: #9E91B7;
   }
-
-  /* .infos p{
-    width: 40%;
-  } */
-  
-  .infos img {
-    width: 50%;
-    height: 100%;
-    margin-right: 5%; /* Espacement entre l'image et le paragraphe */
-  }
-
-.infos img:hover{
-    transform: scale(1.2);
-}
 
 button{
     color: whitesmoke;
@@ -115,6 +139,11 @@ button{
     border-bottom: 2px solid whitesmoke;
 }
 
+#image_suit_souris{
+    display: block;
+    height: 80px;
+    width: 50px;
+}
 
 body{
     background-image: url("Illustrations + Logo/All pages/arrière_plan.png");
@@ -233,17 +262,23 @@ aside span{
 }
 
 .black_panther{
-    width: 25%;
-    height: 25%;
+    width: 35%;
+    height: 50%;
     float: right;
     margin-right: 9%;
-    margin-bottom: 20%;
+    /* margin-bottom: 20%; */
+    /* margin-bottom: 20%; */
 }
 
 form{
-    margin-left: 40%;
-    margin-top: 0%;
+    padding-left: 35%;
+    padding-bottom: 0%;
+    margin: auto;
+    margin-top: 100%;
+    margin-bottom: 0%;
     padding: auto;
+    background-image: url('Illustrations + Logo/Accueil/Pantherhome7.png');
+    background-position: center;
 }
 
 input{
@@ -296,7 +331,7 @@ footer{
 .link{
     position: absolute;
     left: 17%;
-    top: 680%;
+    top: 505%;
 }
 
 .images{

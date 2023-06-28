@@ -69,9 +69,19 @@ a{
     right: 10%;
 }
 
+#navigation a:hover{
+    border-bottom: 2px solid whitesmoke;
+}
+
 .logo{
     display: block;
     margin-bottom: 77%;
+}
+
+#image_suit_souris{
+    display: block;
+    height: 80px;
+    width: 50px;
 }
 
 .social_network{
@@ -123,8 +133,8 @@ a{
 }
 
 .content{
-    background-image: url("Illustrations + Logo/Wakanda/Pantherwakanda2.png");
-    background-position: top;
+    background-image: url('Illustrations + Logo/Wakanda/Pantherwakanda2.png');
+    background-position: top center;
     background-repeat: no-repeat;
 }
 
@@ -179,7 +189,7 @@ footer{
 .link{
     position: absolute;
     left: 17%;
-    top: 365%;
+    top: 378%;
 }
 
 .images{

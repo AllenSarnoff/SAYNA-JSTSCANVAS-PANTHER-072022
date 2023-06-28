@@ -25,16 +25,75 @@ let i = 0;
 
 submit.addEventListener("click", gaming);
 function gaming(){
-    
-    title.textContent = 'ENIGME NUMERO '+ (i+2);
-    description.textContent =  game.description[i];
-    crypted.textContent = game.crypted[i];
-    crypted.style.fontFamily = "Cantarell";
-    crypted.style.fontSize = "85%";
-    crypted.style.letterSpacing = "normal";
-    crypted.style.wordSpacing = "10px";
-    informationTitle.textContent = game.informationTitle;
-    informationContent.textContent = game.informationContent[i];
-    
+
+        title.textContent = 'ENIGME NUMERO '+ (i+2);
+        description.textContent =  game.description[i];
+        crypted.textContent = game.crypted[i];
+        crypted.style.fontFamily = "Cantarell";
+        crypted.style.fontSize = "85%";
+        crypted.style.letterSpacing = "normal";
+        crypted.style.wordSpacing = "10px";
+        informationTitle.textContent = game.informationTitle;
+        informationContent.textContent = game.informationContent[i];
+
+        if (i>=2) {
+                const conf = document.querySelector(".submit");
+                const overlay = document.querySelector(".overlay");
+                const popUpMessage = document.querySelector(".popUpMessage");
+        
+                let mail = document.querySelector("#mail");
+                let acceptNewsletter;
+                let frequency = document.querySelector("#frequence");
+                let message = document.querySelector("#comments");
+                overlay.style.display="block";
+    } 
     i++;
 }
+       
+let logoBP = document.querySelector("#image_suit_souris");
+document.onmousemove = follow;
+    function follow(e){
+        var x =  e.pageX;
+        var y =  e.pageY;
+                        
+        logoBP.style.left = (x+1)+'px';
+        logoBP.style.top  = (y+1)+'px';
+    }
+
+
+let now = new Date();//Pour eviter le decalage horaire
+const dateOffsetInMinutes = now.getTimezoneOffset();
+
+const millisecondsInMinute = 60*1000;
+const millisecondsInHour = 60*millisecondsInMinute;
+const millisecondsInDay = 24*millisecondsInHour;
+
+const newYear = new Date("2023-06-29T00:01:00+0000");
+
+const getCountdown = () =>{
+    let nowDate = Date.now(); //A partir du 1janvier 1970
+
+    let tempsRestantEnMs = newYear - nowDate + dateOffsetInMinutes*millisecondsInMinute;
+
+    //Jours: 
+    let nbJours = Math.floor(tempsRestantEnMs/millisecondsInDay); 
+
+    //Heures
+    let resteTempsSansJoursMs = tempsRestantEnMs - nbJours * millisecondsInDay;
+    let nbHeures = Math.floor(resteTempsSansJoursMs/millisecondsInHour);
+
+    //Minutes: 
+    let resteTempsSansHeuresMs = resteTempsSansJoursMs - nbHeures * millisecondsInHour;
+    let nbMinutes = Math.floor(resteTempsSansHeuresMs/millisecondsInMinute);
+
+    //Secondes:
+    let resteTempsSansMinutes = resteTempsSansHeuresMs - nbMinutes * millisecondsInMinute;
+    let nbSecondes = Math.floor(resteTempsSansMinutes/1000);
+
+    document.querySelector("#hours").textContent = nbHeures;
+    document.querySelector("#minutes").textContent = nbHeures;
+    document.querySelector("#seconds").textContent = nbSecondes;
+    window.setTimeout(getCountdown, 1000);
+}
+ 
+getCountdown();
